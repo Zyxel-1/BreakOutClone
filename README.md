@@ -2,7 +2,7 @@
 # BreakOut Clone
 A java based game of the popular early 1980s atari game [BreakOut](https://en.wikipedia.org/wiki/Breakout_(video_game)) developed for CS 03 - Introduction to Java class.
 
-! [] (sample.gif)
+![](sample.gif)
 
 ## Get Started
 
