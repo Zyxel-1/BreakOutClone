@@ -24,8 +24,8 @@ import java.util.Random;
 public class Ball extends Sprite 
 {
    private int BallSpeed    = 2;
-   private int x_dir_speed  =  BallSpeed;
-   private int y_dir_speed  = -BallSpeed;
+   private int x_dir_speed  = BallSpeed;
+   private int y_dir_speed  = BallSpeed;
    private int RightBorder  = 570;
    private int LeftBorder   = 0;
    private int TopBorder    = 0;
@@ -64,7 +64,7 @@ public class Ball extends Sprite
         setYDir(5);
       }
       
-        System.out.println(this.x + "," + this.y);
+        //System.out.println(this.x + "," + this.y);
     }
     public void respawn() 
     {
@@ -73,11 +73,11 @@ public class Ball extends Sprite
     }
     public void setXDir(int x)
     {
-      x_dir_speed = - x_dir_speed;
+      x_dir_speed = -x_dir_speed;
     }
     public void setYDir(int y)
     {
-      y_dir_speed = - y_dir_speed;
+      y_dir_speed = -y_dir_speed;
         
     }
     public int getYDir()

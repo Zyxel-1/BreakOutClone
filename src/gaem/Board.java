@@ -152,35 +152,16 @@ public class Board extends JPanel
 
             int paddleLPos = (int)paddle.getRect().getMinX();
             int ballLPos = (int)ball.getRect().getMinX();
-
-            int first = paddleLPos + 8;
-            int second = paddleLPos + 16;
-            int third = paddleLPos + 24;
-            int fourth = paddleLPos + 32;
-            if (ballLPos < first) 
-            {
-                ball.setXDir(-1);
-                ball.setYDir(-1);
-            }
-            if (ballLPos >= first && ballLPos < second)
-            {
-                ball.setXDir(-1);
-                ball.setYDir(-1 );//* ball.getYDir()
-            }
-            if (ballLPos >= second && ballLPos < third) 
-            {
-                ball.setXDir(0);
-                ball.setYDir(-1);
-            }
-            if (ballLPos >= third && ballLPos < fourth)
-            {
-                ball.setXDir(1);
-                ball.setYDir(-1 * ball.getYDir());
-            }
-            if (ballLPos > fourth)
-            {
-                ball.setXDir(1);
-                ball.setYDir(-1);
+            int paddlewidth = (int)paddle.width;
+            int LeftPaddle = paddleLPos + paddlewidth/3;
+            int MiddlePaddle = paddleLPos + 2*paddlewidth/3;
+            if(ballLPos < LeftPaddle) {
+            	System.out.println("Left Side");
+            	ball.setXDir(-10);
+            	ball.setYDir(10);
+            }else if(ballLPos >LeftPaddle) {
+            	ball.setXDir(10);
+            	ball.setYDir(-10);
             }
         }
         for (int i = 0; i < (x_numBrick*y_numBrick); i++)
