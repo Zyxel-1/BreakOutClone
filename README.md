@@ -24,7 +24,7 @@ The game is divided between 7 java files being the following:
  - **Title.java:**
     - Was going to be the title.
 
-***Known Bugs***
+##Known Bugs
 
 These are the known bugs that I have seen appear in the game.
 
